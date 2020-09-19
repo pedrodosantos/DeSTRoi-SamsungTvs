@@ -1,0 +1,9 @@
+﻿<Application x:Class="DeSTRoi.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:IOLibs1="clr-namespace:DeSTRoi.Libraries.IO;assembly=DeSTRoi.Libraries.IO"
+             ShutdownMode="OnMainWindowClose">
+    <Application.Resources>
+        <ResourceDictionary>
+            <IOLibs1:FileSizeValueConverter x:Key="fsConverter" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

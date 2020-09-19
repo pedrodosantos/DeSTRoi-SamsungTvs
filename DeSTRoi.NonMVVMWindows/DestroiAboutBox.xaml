@@ -1,0 +1,5 @@
+﻿<Window x:Class="DeSTRoi.NonMVVMWindows.DestroiAboutBox" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        x:Uid="idAboutBox" Style="{DynamicResource AboutDialogStyle}" 
+        WindowStartupLocation="CenterOwner" Title="{Binding Mode=OneTime, Path=ProductTitle, RelativeSource={RelativeSource Self}}">
+
+</Window>

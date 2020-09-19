@@ -1,0 +1,98 @@
+﻿<Window x:Class="DeSTRoi.Views.FTPDownloadView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:lex="clr-namespace:WPFLocalizeExtension.Extensions;assembly=WPFLocalizeExtension.Extensions" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:my="clr-namespace:DeSTRoi.Libraries.Localization;assembly=DeSTRoi.Libraries.Localization" 
+        xmlns:local="clr-namespace:DeSTRoi"
+        xmlns:vm1="clr-namespace:DeSTRoi" xmlns:vm11="clr-namespace:DeSTRoi.ViewModels" Height="453" Width="731" ShowInTaskbar="False"  Title="{lex:LocText DeSTRoi:FTPDownloadView:FTPDownload}" Closing="Window_Closing" Loaded="Window_Loaded">
+    <FrameworkElement.Resources>
+        <ResourceDictionary>
+   
+            <my:CultureConverter  x:Key="CultureConverter" />
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        </ResourceDictionary>
+    </FrameworkElement.Resources>
+    <FrameworkElement.DataContext>
+        <vm11:FTPDownloadViewModel />
+    </FrameworkElement.DataContext>
+    <Grid Margin="6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="35" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="6" Orientation="Horizontal">
+            <Button Margin="0,0,6,0" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Command="{Binding Path=RefreshListCommand}" ToolTip="{lex:LocText DeSTRoi:FTPDownloadView:RefreshList}">
+                <Grid>
+                    <Image Width="16" Height="16" Source="/DeSTRoi;component/Resources/Images/Refresh_16.png"/>
+                </Grid>
+            </Button>
+            <TextBlock Margin="0,0,6,0" VerticalAlignment="Center" Text="{ lex:LocText DeSTRoi:FTPDownloadView:TVIP}" />
+            <TextBlock VerticalAlignment="Center" Text="{Binding Path=TVIP}" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <TextBlock VerticalAlignment="Center" Text="{ lex:LocText DeSTRoi:FTPDownloadView:KeyRetMethod}" />
+            <TextBlock VerticalAlignment="Center" Text="{Binding Path=KeyRetreivalMethod}" />
+        </StackPanel>
+        <ListView Name="lvDlFiles" Grid.Row="1" Margin="0,0,0,6" ItemsSource="{Binding Path=FTPFiles}" SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Path=INF.ChannelName}">
+                        <GridViewColumnHeader Tag="INF.ChannelName" Click="SortClick">
+                            <TextBlock Margin="6,0,18,0" Text="{lex:LocText DeSTRoi:FTPDownloadView:Channel}" />
+                        </GridViewColumnHeader>
+                    </GridViewColumn>
+                    <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Path=INF.Title}">
+                        <GridViewColumnHeader Tag="INF.Title" Click="SortClick">
+                            <TextBlock Margin="6,0,18,0" Text="{lex:LocText DeSTRoi:FTPDownloadView:MovieTitle}" />
+                        </GridViewColumnHeader>
+                    </GridViewColumn>
+                    <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Path=INF.Duration}">
+                        <GridViewColumnHeader Tag="INF.Duration" Click="SortClick">
+                            <TextBlock Margin="6,0,18,0" Text="{lex:LocText DeSTRoi:FTPDownloadView:Duration}" />
+                        </GridViewColumnHeader>
+                    </GridViewColumn>
+                    <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Path=FileSize, Converter={StaticResource fsConverter}, Mode=OneWay}">
+                        <GridViewColumnHeader Tag="FileSize" Click="SortClick">
+                            <TextBlock Margin="6,0,18,0" Text="{lex:LocText DeSTRoi:FTPDownloadView:Size}" />
+                        </GridViewColumnHeader>
+                    </GridViewColumn>
+                    <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Path=INF.RecTime, Converter={StaticResource CultureConverter}}">
+                        <GridViewColumnHeader Tag="INF.RecTime" Click="SortClick">
+                            <TextBlock Margin="6,0,18,0" Text="{lex:LocText DeSTRoi:FTPDownloadView:RecTime}" />
+                        </GridViewColumnHeader>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Grid Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="{Binding Path=OnlyOneFileSelected, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Name="DetailsColDef" Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Margin="0,0,6,0" Grid.Column="0">
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,6">
+                    <TextBlock Text="{lex:LocText DeSTRoi:FTPDownloadView:DetInfoLabel}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,6">
+                    <TextBlock Text="{lex:LocText DeSTRoi:FTPDownloadView:ChannelNumber}" />
+                    <TextBlock Text="{Binding ElementName=lvDlFiles, Path=SelectedItem.INF.ChannelNumber}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,6">
+                    <TextBlock Text="{lex:LocText DeSTRoi:FTPDownloadView:Language}" />
+                    <TextBlock Text="{Binding ElementName=lvDlFiles, Path=SelectedItem.INF.Language}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,6">
+                    <TextBlock Text="{lex:LocText DeSTRoi:FTPDownloadView:Category}" />
+                    <TextBlock Text="{Binding ElementName=lvDlFiles, Path=SelectedItem.INF.Category}" />
+                </StackPanel>
+            </StackPanel>
+            <TextBox MaxHeight="85" IsReadOnly="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" Grid.Column="1" Text="{Binding ElementName=lvDlFiles, Path=SelectedItem.INF.Info}" Width="{Binding ElementName=DetailsColDef, Path=Width}" />
+        </Grid>
+        <StackPanel Grid.Row="3" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button IsCancel="True" Width="100" Margin="6" Content="{lex:LocText DeSTRoi:FTPDownloadView:Cancel}" />
+            <Button IsDefault="True" Width="100" Margin="6" Command="{Binding Path=DownloadSelectedCommand, UpdateSourceTrigger=PropertyChanged}" Content="{lex:LocText DeSTRoi:FTPDownloadView:Download}" />
+        </StackPanel>
+        <CheckBox Grid.Row="3" Height="16" HorizontalAlignment="Left" Margin="6,0,6,0" VerticalAlignment="Center" Content="{lex:LocText DeSTRoi:FTPDownloadView:OTF}" IsChecked="{Binding Path=OTFDecrypt}" IsEnabled="{Binding Path=KeyRetIsMDB}" />
+    </Grid>
+</Window>

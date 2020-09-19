@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="TTOutDirTBTitle"><value>Output directory path</value></data>
+  <data name="TVIPTTTitle"><value>TV IP Address</value></data>
+  <data name="TTOutputSettingsDesc"><value>Select the output path here.</value></data>
+  <data name="TTAFTitle"><value>Decrypt Adaptation Field</value></data>
+  <data name="TTOpenFTPFooterTitle"><value>Prerequisites:</value></data>
+  <data name="AddKey"><value>Add Key</value></data>
+  <data name="TTTVSettingTitle"><value>Television Settings</value></data>
+  <data name="DRMGet"><value>DRMGet</value></data>
+  <data name="HelpBtnTTDesc"><value>Help and information about this program.</value></data>
+  <data name="TTOutDirDesc"><value>Shows a Dialog that allows you to choose a directory for the output of the movie file.</value></data>
+  <data name="LabelDecrypt"><value>Decrypt</value></data>
+  <data name="LabelDownload"><value>Download</value></data>
+  <data name="TTOutDirTBDesc"><value>You can enter an output directory path here or select it by the select button.</value></data>
+  <data name="AnonFTPLabel"><value>Anonymous FTP</value></data>
+  <data name="TTDecryptFooterDesc"><value>Only movies with a valid key can be decrypted.</value></data>
+  <data name="TTAFDesc"><value>Decrypts the adaptation field of a TS Packet. Might be needed on some/all? D-Series TVs.</value></data>
+  <data name="TTKeyGroupTitle"><value>Key Group</value></data>
+  <data name="TTOutDirTBFooterDesc"><value>Only a valid and existing path will enable you to use the decrypt function.</value></data>
+  <data name="TTOpenLocalFooterDesc"><value>If a keyfile with the same base filename is present, it will also be loaded as part of the movie.</value></data>
+  <data name="OutputDirectory"><value>Output Settings</value></data>
+  <data name="TTDownloadFTPFooterTitle"><value>Prerequisites:</value></data>
+  <data name="TTAFFooterDesc"><value>Sets the default value for this operation. It is settable per file.</value></data>
+  <data name="TTDownloadFTPDesc"><value>Opens a dialog that allows you to select and download movies directly from your TV by FTP</value></data>
+  <data name="Encryption"><value>Encryption</value></data>
+  <data name="AnonFTPTTDesc"><value>Select this, if you do not have to enter a special username and/or password to connect to your FTP Server on your TV.</value></data>
+  <data name="LabelRefreshIPs"><value>Refresh IPs</value></data>
+  <data name="TTDecryptDesc"><value>Decrypts the movies in the list and saves the decrypted streams to the output directory.</value></data>
+  <data name="AboutLabel"><value>About</value></data>
+  <data name="AnonFTPTTFooterDesc"><value>If deselected, you can enter your FTP login credentials.</value></data>
+  <data name="TTDecryptTitle"><value>Decrypt movies</value></data>
+  <data name="TTKeyRetreivalDesc"><value>DRMGet: Key retreival over the DRMGet App. DRM must be enabled on the TV and the corresponding movie played to retreive the key.
+MDF: Key is read from the MDF file accompaniing the movie file. No special prequesites are required.</value></data>
+  <data name="TTOpenKeyTitle"><value>Opens a dialog to load a key file for the selected moviefile.</value></data>
+  <data name="TVIPTTFooter"><value>The IP Address is required if you want to download movie files from your TV.</value></data>
+  <data name="Decryption"><value>Decryption</value></data>
+  <data name="TTKeyGroupDesc"><value>Access to encryption key properties of the selected file.</value></data>
+  <data name="Decrypt"><value>Decrypt</value></data>
+  <data name="LabelRemove"><value>Remove</value></data>
+  <data name="LabelSelect"><value>Select</value></data>
+  <data name="TVIPTTDesc"><value>Select the IP Address of your TV here.</value></data>
+  <data name="Download"><value>Download</value></data>
+  <data name="TTRemoveFileFooterDesc"><value>If the movie was downloaded from your TV in the current session, you will have the possibility to delete all temporary files.</value></data>
+  <data name="MDB"><value>MDB</value></data>
+  <data name="Key"><value>Key</value></data>
+  <data name="Title"><value>DeSTRoi - Decrypt Samsung TV Recordings</value></data>
+  <data name="Start"><value>Start</value></data>
+  <data name="LabelKeyRetreival"><value>Key Retreival</value></data>
+  <data name="LabelOpen"><value>Open</value></data>
+  <data name="FTPUserLabel"><value>FTP User:</value></data>
+  <data name="TTOpenLocalTitle"><value>Open file</value></data>
+  <data name="TTDownloadFTPFooterDesc"><value>An output directory must be selected and valid before using this function.
+A FTP server must be running on your TV. E.g. vsftpd provided with the SamyGO Extensions.</value></data>
+  <data name="TTDownloadFTPTitle"><value>Download by FTP</value></data>
+  <data name="Settings"><value>Settings</value></data>
+  <data name="TTDecryptGroupDesc"><value>Access to function for decrypting movie files</value></data>
+  <data name="TTOpenKeyDesc"><value>Add/Change Key</value></data>
+  <data name="TTRefreshIPDesc"><value>Searches all connected devices in the network and updates the list from which you can choose the TV IP.</value></data>
+  <data name="TTOutputSettingsTitle"><value>Output</value></data>
+  <data name="TTRefreshIPTitle"><value>Refresh Network IPs</value></data>
+  <data name="Filesize"><value>Filesize</value></data>
+  <data name="Filename"><value>Filename</value></data>
+  <data name="HelpBtnTTTitle"><value>Help</value></data>
+  <data name="AboutTTDesc"><value>Information about this program</value></data>
+  <data name="AboutTTTitle"><value>About DeSTRoi</value></data>
+  <data name="TTRemoveFileDesc"><value>Removes the selected movies from the decryption list.</value></data>
+  <data name="TTTVSettingDesc"><value>Access to settings regarding your Samsung Television.</value></data>
+  <data name="TTKeyRetreivalTitle"><value>Key Retreival Method</value></data>
+  <data name="AFLabel"><value>Decrypt AF</value></data>
+  <data name="TTOpenLocalDesc"><value>Opens a movie file from your local disk.</value></data>
+  <data name="TTFileGroupTitle"><value>File Group</value></data>
+  <data name="MovieFile"><value>Movie File</value></data>
+  <data name="TTOutDirTitle"><value>Select output directory</value></data>
+  <data name="FTPPwdLabel"><value>FTP Password:</value></data>
+  <data name="TVSettings"><value>TV Settings</value></data>
+  <data name="TTDecryptGroupTitle"><value>Decryption Group</value></data>
+  <data name="File"><value>File</value></data>
+  <data name="Open"><value>Open</value></data>
+  <data name="TVIP"><value>TV IP:</value></data>
+  <data name="TTRemoveFileTitle"><value>Remove movie</value></data>
+  <data name="TTFileGroupDesc"><value>Access to functions for loading, opening or removing movie files.</value></data>
+  </root>

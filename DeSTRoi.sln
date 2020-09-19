@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeSTRoi.Libraries.IO", "DeSTRoi.Libraries.IO\DeSTRoi.Libraries.IO.csproj", "{38408516-5D7F-496C-A235-5B2410C9445B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeSTRoi.Libraries.Network", "DeSTRoi.Libraries.Network\DeSTRoi.Libraries.Network.csproj", "{6864D856-AC44-4D3B-8EE3-56B2D5957AD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeSTRoi.NonMVVMWindows", "DeSTRoi.NonMVVMWindows\DeSTRoi.NonMVVMWindows.csproj", "{FC03FDF7-C928-4E36-A5CC-6A9B3744E0D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeSTRoi.Libraries", "DeSTRoi.Libraries\DeSTRoi.Libraries.csproj", "{9F70BE4D-8C64-4ECD-ACA7-9F236EA968D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroMvvm", "MicroMvvm\MicroMvvm.csproj", "{B80E2704-F0E8-485E-BD74-8D22D0014BFB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeSTRoi", "DeSTRoi\DeSTRoi.csproj", "{26F4F8B7-07F3-489E-AEA7-D8D635C49C95}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4B27F012-D7D0-4A9A-8E16-A228C0A4E3A4} = {4B27F012-D7D0-4A9A-8E16-A228C0A4E3A4}
+		{A9AF8D84-47BB-497A-B90A-F0F252F9CC5A} = {A9AF8D84-47BB-497A-B90A-F0F252F9CC5A}
+		{89CDDDC3-7A8C-4D5A-86AA-16EDDF9C69D1} = {89CDDDC3-7A8C-4D5A-86AA-16EDDF9C69D1}
+		{A8663BE5-286B-4AE6-BCDA-90503BBE143F} = {A8663BE5-286B-4AE6-BCDA-90503BBE143F}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeSTRoi.Libraries.Localization", "DeSTRoi.Libraries.Localization\DeSTRoi.Libraries.Localization.csproj", "{146D0BC1-F248-4036-8E52-89FA3C459DE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AttachedCommandBehavior", "AttachedCommandBehavior\AttachedCommandBehavior.csproj", "{CF42D4F9-69B5-4522-AD3C-A91397EDD7EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFLocalizeExtension.BaseExtensions", "WPFLocalizeExtension.BaseExtensions\WPFLocalizeExtension.BaseExtensions.csproj", "{89CDDDC3-7A8C-4D5A-86AA-16EDDF9C69D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFLocalizeExtension.Extensions", "WPFLocalizeExtension.Extensions\WPFLocalizeExtension.Extensions.csproj", "{8F144566-AAAB-4446-80C4-17377C3B24E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFLocalizeExtension.Engine", "WPFLocalizeExtension.Engine\WPFLocalizeExtension.Engine.csproj", "{ABE44D02-57CC-4DCA-90B6-087D2BA8A44F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeSTRoi.Properties", "DeSTRoi.Properties\DeSTRoi.Properties.csproj", "{A9AF8D84-47BB-497A-B90A-F0F252F9CC5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalisticTelnet", "MinimalisticTelnet\MinimalisticTelnet.csproj", "{4B27F012-D7D0-4A9A-8E16-A228C0A4E3A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlGeneratedNamespace", "XamlGeneratedNamespace\XamlGeneratedNamespace.csproj", "{A8663BE5-286B-4AE6-BCDA-90503BBE143F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38408516-5D7F-496C-A235-5B2410C9445B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38408516-5D7F-496C-A235-5B2410C9445B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38408516-5D7F-496C-A235-5B2410C9445B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{38408516-5D7F-496C-A235-5B2410C9445B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6864D856-AC44-4D3B-8EE3-56B2D5957AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6864D856-AC44-4D3B-8EE3-56B2D5957AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6864D856-AC44-4D3B-8EE3-56B2D5957AD4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6864D856-AC44-4D3B-8EE3-56B2D5957AD4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{FC03FDF7-C928-4E36-A5CC-6A9B3744E0D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC03FDF7-C928-4E36-A5CC-6A9B3744E0D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC03FDF7-C928-4E36-A5CC-6A9B3744E0D0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC03FDF7-C928-4E36-A5CC-6A9B3744E0D0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9F70BE4D-8C64-4ECD-ACA7-9F236EA968D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F70BE4D-8C64-4ECD-ACA7-9F236EA968D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F70BE4D-8C64-4ECD-ACA7-9F236EA968D7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F70BE4D-8C64-4ECD-ACA7-9F236EA968D7}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B80E2704-F0E8-485E-BD74-8D22D0014BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80E2704-F0E8-485E-BD74-8D22D0014BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80E2704-F0E8-485E-BD74-8D22D0014BFB}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80E2704-F0E8-485E-BD74-8D22D0014BFB}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{26F4F8B7-07F3-489E-AEA7-D8D635C49C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F4F8B7-07F3-489E-AEA7-D8D635C49C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F4F8B7-07F3-489E-AEA7-D8D635C49C95}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F4F8B7-07F3-489E-AEA7-D8D635C49C95}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{146D0BC1-F248-4036-8E52-89FA3C459DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146D0BC1-F248-4036-8E52-89FA3C459DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146D0BC1-F248-4036-8E52-89FA3C459DE5}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{146D0BC1-F248-4036-8E52-89FA3C459DE5}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{CF42D4F9-69B5-4522-AD3C-A91397EDD7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF42D4F9-69B5-4522-AD3C-A91397EDD7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF42D4F9-69B5-4522-AD3C-A91397EDD7EE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF42D4F9-69B5-4522-AD3C-A91397EDD7EE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{89CDDDC3-7A8C-4D5A-86AA-16EDDF9C69D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89CDDDC3-7A8C-4D5A-86AA-16EDDF9C69D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89CDDDC3-7A8C-4D5A-86AA-16EDDF9C69D1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{89CDDDC3-7A8C-4D5A-86AA-16EDDF9C69D1}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8F144566-AAAB-4446-80C4-17377C3B24E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F144566-AAAB-4446-80C4-17377C3B24E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F144566-AAAB-4446-80C4-17377C3B24E4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F144566-AAAB-4446-80C4-17377C3B24E4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{ABE44D02-57CC-4DCA-90B6-087D2BA8A44F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE44D02-57CC-4DCA-90B6-087D2BA8A44F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE44D02-57CC-4DCA-90B6-087D2BA8A44F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE44D02-57CC-4DCA-90B6-087D2BA8A44F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A9AF8D84-47BB-497A-B90A-F0F252F9CC5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AF8D84-47BB-497A-B90A-F0F252F9CC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AF8D84-47BB-497A-B90A-F0F252F9CC5A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AF8D84-47BB-497A-B90A-F0F252F9CC5A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4B27F012-D7D0-4A9A-8E16-A228C0A4E3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B27F012-D7D0-4A9A-8E16-A228C0A4E3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B27F012-D7D0-4A9A-8E16-A228C0A4E3A4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B27F012-D7D0-4A9A-8E16-A228C0A4E3A4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A8663BE5-286B-4AE6-BCDA-90503BBE143F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8663BE5-286B-4AE6-BCDA-90503BBE143F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8663BE5-286B-4AE6-BCDA-90503BBE143F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8663BE5-286B-4AE6-BCDA-90503BBE143F}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1209F09A-4053-47C8-837F-3A68452BD266}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,144 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DeSTRoi.App</StartupObject>
+    <ApplicationIcon>destroi.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="destroi.ico" />
+    <None Remove="nonmvmwindows\aboutlogo.png" />
+    <None Remove="nonmvmwindows\dialogbox\nullico.ico" />
+    <None Remove="nonmvmwindows\gplv3-88x31.png" />
+    <None Remove="Resources\Images\alert_16.png" />
+    <None Remove="Resources\Images\alert_32.png" />
+    <None Remove="Resources\Images\anonymous.png" />
+    <None Remove="Resources\Images\check_16.png" />
+    <None Remove="Resources\Images\check_32.png" />
+    <None Remove="Resources\Images\crack_16.png" />
+    <None Remove="Resources\Images\crack_32.png" />
+    <None Remove="Resources\Images\decrypted_16.png" />
+    <None Remove="Resources\Images\decrypted_32.png" />
+    <None Remove="Resources\Images\delete_16.png" />
+    <None Remove="Resources\Images\delete_32.png" />
+    <None Remove="Resources\Images\delicius_16.png" />
+    <None Remove="Resources\Images\delicius_32.png" />
+    <None Remove="Resources\Images\dialogbox-nullico.ico" />
+    <None Remove="Resources\Images\download_16.png" />
+    <None Remove="Resources\Images\download_32.png" />
+    <None Remove="Resources\Images\exit_16.png" />
+    <None Remove="Resources\Images\exit_32.png" />
+    <None Remove="Resources\Images\find_16.png" />
+    <None Remove="Resources\Images\find_32.png" />
+    <None Remove="Resources\Images\folder_16.png" />
+    <None Remove="Resources\Images\folder_32.png" />
+    <None Remove="Resources\Images\gplv3-88x31.png" />
+    <None Remove="Resources\Images\hard disk_16.png" />
+    <None Remove="Resources\Images\hard disk_32.png" />
+    <None Remove="Resources\Images\help_16.png" />
+    <None Remove="Resources\Images\help_32.png" />
+    <None Remove="Resources\Images\information_16.png" />
+    <None Remove="Resources\Images\information_32.png" />
+    <None Remove="Resources\Images\ip_32.png" />
+    <None Remove="Resources\Images\key_16.png" />
+    <None Remove="Resources\Images\key_32.png" />
+    <None Remove="Resources\Images\open_16.png" />
+    <None Remove="Resources\Images\open_32.png" />
+    <None Remove="Resources\Images\refresh_16.png" />
+    <None Remove="Resources\Images\refresh_32.png" />
+    <None Remove="Resources\Images\remote_16.png" />
+    <None Remove="Resources\Images\remote_32.png" />
+    <None Remove="Resources\Images\settings_16.png" />
+    <None Remove="Resources\Images\settings_32.png" />
+    <None Remove="Resources\Images\tv-dock_16.png" />
+    <None Remove="Resources\Images\tv-dock_32.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="App.xaml" />
+    <Page Remove="AppSe.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AttachedCommandBehavior\AttachedCommandBehavior.csproj" />
+    <ProjectReference Include="..\DeSTRoi.Libraries.IO\DeSTRoi.Libraries.IO.csproj" />
+    <ProjectReference Include="..\DeSTRoi.Libraries.Localization\DeSTRoi.Libraries.Localization.csproj" />
+    <ProjectReference Include="..\DeSTRoi.Libraries.Network\DeSTRoi.Libraries.Network.csproj" />
+    <ProjectReference Include="..\DeSTRoi.Libraries\DeSTRoi.Libraries.csproj" />
+    <ProjectReference Include="..\DeSTRoi.NonMVVMWindows\DeSTRoi.NonMVVMWindows.csproj" />
+    <ProjectReference Include="..\DeSTRoi.Properties\DeSTRoi.Properties.csproj" />
+    <ProjectReference Include="..\MicroMvvm\MicroMvvm.csproj" />
+    <ProjectReference Include="..\MinimalisticTelnet\MinimalisticTelnet.csproj" />
+    <ProjectReference Include="..\WPFLocalizeExtension.Engine\WPFLocalizeExtension.Engine.csproj" />
+    <ProjectReference Include="..\WPFLocalizeExtension.Extensions\WPFLocalizeExtension.Extensions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RibbonControlsLibrary">
+      <HintPath>..\..\..\..\Downloads\destroi_1.3.1_binaries (1)\RibbonControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Starksoft.Net.Ftp">
+      <HintPath>..\..\..\..\Downloads\destroi_1.3.1_binaries (1)\Starksoft.Net.Ftp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="destroi.ico" />
+    <Resource Include="nonmvmwindows\aboutlogo.png" />
+    <Resource Include="nonmvmwindows\dialogbox\nullico.ico" />
+    <Resource Include="nonmvmwindows\gplv3-88x31.png" />
+    <Resource Include="Resources\Images\alert_16.png" />
+    <Resource Include="Resources\Images\alert_32.png" />
+    <Resource Include="Resources\Images\anonymous.png" />
+    <Resource Include="Resources\Images\check_16.png" />
+    <Resource Include="Resources\Images\check_32.png" />
+    <Resource Include="Resources\Images\crack_16.png" />
+    <Resource Include="Resources\Images\crack_32.png" />
+    <Resource Include="Resources\Images\decrypted_16.png" />
+    <Resource Include="Resources\Images\decrypted_32.png" />
+    <Resource Include="Resources\Images\delete_16.png" />
+    <Resource Include="Resources\Images\delete_32.png" />
+    <Resource Include="Resources\Images\delicius_16.png" />
+    <Resource Include="Resources\Images\delicius_32.png" />
+    <Resource Include="Resources\Images\dialogbox-nullico.ico" />
+    <Resource Include="Resources\Images\download_16.png" />
+    <Resource Include="Resources\Images\download_32.png" />
+    <Resource Include="Resources\Images\exit_16.png" />
+    <Resource Include="Resources\Images\exit_32.png" />
+    <Resource Include="Resources\Images\find_16.png" />
+    <Resource Include="Resources\Images\find_32.png" />
+    <Resource Include="Resources\Images\folder_16.png" />
+    <Resource Include="Resources\Images\folder_32.png" />
+    <Resource Include="Resources\Images\gplv3-88x31.png" />
+    <Resource Include="Resources\Images\hard disk_16.png" />
+    <Resource Include="Resources\Images\hard disk_32.png" />
+    <Resource Include="Resources\Images\help_16.png" />
+    <Resource Include="Resources\Images\help_32.png" />
+    <Resource Include="Resources\Images\information_16.png" />
+    <Resource Include="Resources\Images\information_32.png" />
+    <Resource Include="Resources\Images\ip_32.png" />
+    <Resource Include="Resources\Images\key_16.png" />
+    <Resource Include="Resources\Images\key_32.png" />
+    <Resource Include="Resources\Images\open_16.png" />
+    <Resource Include="Resources\Images\open_32.png" />
+    <Resource Include="Resources\Images\refresh_16.png" />
+    <Resource Include="Resources\Images\refresh_32.png" />
+    <Resource Include="Resources\Images\remote_16.png" />
+    <Resource Include="Resources\Images\remote_32.png" />
+    <Resource Include="Resources\Images\settings_16.png" />
+    <Resource Include="Resources\Images\settings_32.png" />
+    <Resource Include="Resources\Images\tv-dock_16.png" />
+    <Resource Include="Resources\Images\tv-dock_32.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </SplashScreen>
+  </ItemGroup>
+
+</Project>

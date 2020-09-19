@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AttachedCommandBehavior\AttachedCommandBehavior.csproj" />
+    <ProjectReference Include="..\DeSTRoi.Libraries.Localization\DeSTRoi.Libraries.Localization.csproj" />
+    <ProjectReference Include="..\DeSTRoi.Libraries\DeSTRoi.Libraries.csproj" />
+    <ProjectReference Include="..\DeSTRoi.ViewModels\DeSTRoi.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RibbonControlsLibrary">
+      <HintPath>..\..\..\..\Downloads\destroi_1.3.1_binaries (1)\RibbonControlsLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\FTPDownloadView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\InfoView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MainView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Views\FTPDownloadView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\InfoView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>DeSTRoi.Views</CustomToolNamespace>
+    </Page>
+  </ItemGroup>
+
+</Project>

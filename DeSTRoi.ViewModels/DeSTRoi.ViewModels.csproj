@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeSTRoi.Libraries.IO\DeSTRoi.Libraries.IO.csproj" />
+    <ProjectReference Include="..\DeSTRoi.Libraries.Network\DeSTRoi.Libraries.Network.csproj" />
+    <ProjectReference Include="..\DeSTRoi.Models\DeSTRoi.Models.csproj" />
+    <ProjectReference Include="..\DeSTRoi.NonMVVMWindows\DeSTRoi.NonMVVMWindows.csproj" />
+    <ProjectReference Include="..\DeSTRoi.Properties\DeSTRoi.Properties.csproj" />
+    <ProjectReference Include="..\DeSTRoi\DeSTRoi.csproj" />
+    <ProjectReference Include="..\MinimalisticTelnet\MinimalisticTelnet.csproj" />
+    <ProjectReference Include="..\WPFLocalizeExtension.Extensions\WPFLocalizeExtension.Extensions.csproj" />
+    <ProjectReference Include="..\XamlGeneratedNamespace\XamlGeneratedNamespace.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Starksoft.Net.Ftp">
+      <HintPath>..\..\..\..\Downloads\destroi_1.3.1_binaries (1)\Starksoft.Net.Ftp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

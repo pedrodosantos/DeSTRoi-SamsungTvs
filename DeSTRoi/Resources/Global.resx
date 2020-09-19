@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="FatErrContent"><value>An unexpected exception occured:
+</value></data>
+  <data name="ConnectionError"><value>Connection error...</value></data>
+  <data name="MCGetKey"><value>Please disable all Software on your TV
+that allows you to recorde unprotected movie files,
+then play the movie stated above.</value></data>
+  <data name="BtnYes"><value>_Yes</value></data>
+  <data name="FFUnknownDesc"><value> does not seem to be a valid movie file.
+Do you want to add it anyway?</value></data>
+  <data name="PreparingDL"><value>preparing download...</value></data>
+  <data name="Seconds"><value> Seconds...</value></data>
+  <data name="DecryptionInProgress"><value>Decryption in progress...</value></data>
+  <data name="CurrentFile"><value>Current file: </value></data>
+  <data name="MIGettingKey"><value>Getting key for:
+</value></data>
+  <data name="UploadDRMGet"><value>Uploading DRMGet to your TV</value></data>
+  <data name="BtnSkip"><value>_Skip</value></data>
+  <data name="BtnNext"><value>_Next</value></data>
+  <data name="OLFilter"><value>All Samsung Video Formats (*.srf;*.ts)|*.srf;*.ts|Samsung SRF Video (*.srf)|*.srf|Transport Stream Video (*.ts)|*.ts|All Files (*.*)|*.*</value></data>
+  <data name="DLFiles"><value>Downloading files...</value></data>
+  <data name="NoUploadDRMGet"><value>Could not upload DRMGet!
+Aborting download.</value></data>
+  <data name="NoDownload"><value>Could not download
+</value></data>
+  <data name="DownloadError"><value>Download error!</value></data>
+  <data name="MovieListError"><value>Error listing the movie files</value></data>
+  <data name="DRMGetOutputError"><value>DRMGet Output format is wrong. DRMGet might not be able to run on your TV architecture.</value></data>
+  <data name="NoKeyDetectedTitle"><value>No key was detected...</value></data>
+  <data name="SyncLost"><value>Sync lost... resyncing.</value></data>
+  <data name="ExceptionDP"><value>Exception:</value></data>
+  <data name="Decryption"><value>Decryption</value></data>
+  <data name="DRMGetULFaildMsg"><value>Download is being aborted. Try MDB or no key retreival instead.</value></data>
+  <data name="SkipNoKey"><value>Files not having a key will be skipped.</value></data>
+  <data name="FileFormatUnknown"><value>File format unkown</value></data>
+  <data name="of"><value> of </value></data>
+  <data name="PlsWait"><value>please wait...</value></data>
+  <data name="BtnCancel"><value>_Cancel</value></data>
+  <data name="DLMovies"><value>Download Movies</value></data>
+  <data name="InvCorFile"><value>"
+Maybe the file is not a valid movie file or corrupt.</value></data>
+  <data name="DoDeleteDLFile"><value>Do you want to delete the downloaded file?</value></data>
+  <data name="BtnOK"><value>_Ok</value></data>
+  <data name="BtnNo"><value>_No</value></data>
+  <data name="NoKeyDetectedMessage"><value>This propably means, that the file you are trying to download is not DRM protected. The file will still be downloaded, but no decryption key file will be produced.</value></data>
+  <data name="CNSMSOF"><value>Could not sync to movie stream of file "</value></data>
+  <data name="AbortDownload"><value>!
+Aborting download.</value></data>
+  <data name="ConnectionLost"><value>Connection to TV lost.</value></data>
+  <data name="UnexpectedErrorMainInst"><value>An unexpected exception occured...</value></data>
+  <data name="DRMGetULFailed"><value>DRMGet Upload failed!</value></data>
+  <data name="MovieDP"><value>Movie: </value></data>
+  <data name="OKTitle"><value>Open DRMGet Key File...</value></data>
+  <data name="FurtherInfo"><value>Further information:</value></data>
+  <data name="OLTitle"><value>Open local encoded Samsung video file...</value></data>
+  <data name="OKFilter"><value>DRMGet Key File (*.key)|*.key|All Files (*.*)|*.*</value></data>
+  <data name="DecryptionFailed"><value>Decryption failed!</value></data>
+  <data name="RetreivingKey"><value>Retreiving key...</value></data>
+  <data name="NotAllFilesKey"><value>Not all files in the decryption list have a key.</value></data>
+  <data name="SyncError"><value>Sync Error!</value></data>
+  <data name="SyncStream"><value>Syncing stream...</value></data>
+  <data name="Warning"><value>Warning</value></data>
+  <data name="KeyRetFailed"><value>Key retreival failed!</value></data>
+  <data name="FatErrTitle"><value>Fatal error!</value></data>
+  <data name="WaitFor"><value>Wait for </value></data>
+  <data name="File"><value>File </value></data>
+  </root>

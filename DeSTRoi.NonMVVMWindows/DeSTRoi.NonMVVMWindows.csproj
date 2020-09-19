@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="aboutlogo.png" />
+    <None Remove="DialogBox\nullico.ico" />
+    <None Remove="gplv3-88x31.png" />
+    <None Remove="nonmvmwindows\aboutlogo.png" />
+    <None Remove="nonmvmwindows\dialogbox\nullico.ico" />
+    <None Remove="nonmvmwindows\gplv3-88x31.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="aboutlogo.png" />
+    <Resource Include="DialogBox\nullico.ico" />
+    <Resource Include="gplv3-88x31.png" />
+    <Resource Include="nonmvmwindows\aboutlogo.png" />
+    <Resource Include="nonmvmwindows\dialogbox\nullico.ico" />
+    <Resource Include="nonmvmwindows\gplv3-88x31.png" />
+  </ItemGroup>
+
+</Project>
